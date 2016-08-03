@@ -47,24 +47,40 @@ def do_four(f):
     do_twice(f)
     do_twice(f)
 
-def print_row():
+def print_row4():
     print ('+----+----+----+----+')
 
-def print_column():
+def print_column4():
     print ('|    |    |    |    |')
 
-def print_columns():
-    do_four(print_column)
+def print_columns4():
+    do_four(print_column4)
 
-def do_grid():
-    print_row()
-    print_columns()
+def do_four_by_four():
+    print_row4()
+    print_columns4()
 
-def print_grid():
-    do_twice(do_grid)
-    do_twice(do_grid)
-    print_row()
+def print_four_by_four():
+    do_twice(do_four_by_four)
+    do_twice(do_four_by_four)
+    print_row4()
 
+def print_row2():
+    print ('+----+----+')
+
+def print_column2():
+    print ('|    |    |')
+
+def print_columns2():
+    do_four(print_column2)
+
+def do_two_by_two():
+    print_row2()
+    print_columns2()
+
+def print_two_by_two():
+    do_twice(do_two_by_two)
+    print_row2()
 
 
 
@@ -80,7 +96,8 @@ def print_grid():
 # Write your functions above:
 ################################################################################
 def main():
-    print_grid()
+    print_four_by_four()
+    print_two_by_two()
     print("Hello World!")
     
 
