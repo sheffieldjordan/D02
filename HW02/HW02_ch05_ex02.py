@@ -34,7 +34,7 @@
 def main():
     """Call your function within this function.
     When complete have one function call in this function:
-    check_fermat_ints(1,2,3,4)
+    check_fermat_ints()
     and two functions defined in the body:
     check_fermat_ints()
     check_fermat()
