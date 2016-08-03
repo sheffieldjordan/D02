@@ -65,7 +65,7 @@ def print_grid():
     do_twice(do_grid)
     print_row()
 
-print_grid()
+
 
 
 
@@ -80,11 +80,7 @@ print_grid()
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have two function calls in this function:
-    two_by_two()
-    four_by_four()
-    """
+    print_grid()
     print("Hello World!")
     
 

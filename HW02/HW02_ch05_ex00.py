@@ -8,7 +8,11 @@
 # Write your functions below:
 # Body
 
-
+def do_n(fn,x):
+	if x <= 0: #If x is less than or equal to 0
+		return #then the operation ends
+	fn() #Execute the argument-function-object if the 'if' condition is not met.
+	do_n(fn, x-1) #Execute the the do_n function again, but decrease the counter, n, by 1. 
 
 
 
@@ -21,11 +25,8 @@ def print_hello():
     print("Hello World")
 ################################################################################
 def main():
-    """Call your function within this function.
-    When complete have one function call in this function:
-    do_n(print_hello, 10)
-    """
-    print_hello() # replace this with do_n(print_hello, 10)
+    do_n(print_hello, 10) #Prints Hello World 10 times, then stops. 
+    
 
 
 
